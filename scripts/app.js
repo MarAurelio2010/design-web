@@ -1,0 +1,1 @@
+alert("se você está no site, você gosta de verdura!")
