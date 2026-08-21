@@ -7,6 +7,6 @@ function calcIdade(ano){
     alert(`Dentro de função - Idade ${idade}`);
     return idade;
 }
-
+calcIdade();
 alert(`fora da função: Idade ${idade}`);
-alert(`fora da função: Idade ${calcIdade}`);
+alert(`fora da função: chamando calIdade ${calcIdade}`);
