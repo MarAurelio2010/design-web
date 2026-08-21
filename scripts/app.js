@@ -1,13 +1,12 @@
-alert("se você está no site, você gosta de verdura!");
 var nasc=2010;
-let nome="'Marco'";
-const vivo=true;
-let altura=1.78;
+let nome="Marco";
+const viva = true;
 
-if (vivo){
-    let saudacao="Olá "+ nome +"!";
-    let msg= `Altura ${altura}m| Idade ${2026-nasc}`;
-    alert(saudacao+"\n"+msg);
-}else{
-    alert("RIP")
+function calcIdade(ano){
+    let idade=ano-nasc;
+    alert(`Dentro de função - Idade ${idade}`);
+    return idade;
 }
+
+alert(`fora da função: Idade ${idade}`);
+alert(`fora da função: Idade ${calcIdade}`);
