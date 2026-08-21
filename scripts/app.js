@@ -1,6 +1,6 @@
 alert("se você está no site, você gosta de verdura!");
 var nasc=2010;
-let nome="Marco";
+let nome="'Marco'";
 const vivo=true;
 let altura=1.78;
 
