@@ -16,7 +16,7 @@ function anterior(e){
     if(foto>1){
         foto = foto - 1;
     }
-    imagem.setAttribute("src", `./img/fotos${foto}.jpg`);
+    imagem.setAttribute("src", `./img/foto${foto}.jpg`);
 }
 
 const ant = document.getElementById("ant");
