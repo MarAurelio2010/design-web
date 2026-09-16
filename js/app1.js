@@ -24,9 +24,16 @@ ant.addEventListener("click", anterior);
 
 function selecionar(e){
     e.preventDefault();
-    i = cbbox.value;
+    i = Number(cbbox.value);
     imagem.setAttribute("src",`./img/foto${i}.jpg`);
 }
 
 const cbbox = document.getElementById("combobox");
 cbbox.addEventListener("change",selecionar);
+
+const opacidade = document.getElementById("opacidade");
+opacidade.addEventListener("input",function(e){
+    e.preventDefault();
+    let valor = opacidade.value;
+    foto.setAttribute("style",`opacity:${valor}`);
+})
