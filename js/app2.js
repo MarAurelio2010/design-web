@@ -7,7 +7,7 @@ const lista = document.getElementById("lista")
 
 cadastro.addEventListener("submit",function(e){
     e.preventDefault();
-    let item = [nome.value, nasc.value, whatsapp.value]
+    let item = [nome.value, nasc.value, whatsapp.value];
     amigos.unshift(item);
     cadastro.reset();
     exibirLista();
