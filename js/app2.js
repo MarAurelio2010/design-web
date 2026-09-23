@@ -16,9 +16,21 @@ cadastro.addEventListener("submit",function(e){
 function exibirLista(){
     let itens = "";
     for(let i = 0; i<amigos.length; i++){
-        let item = amigos[i];
-        let li = `<li>${item[0]} | ${item[1]} | ${item[2]}`
+        let item = amigos[i]; //item = [Nome,Nasc,Whatsapp]
+        //Cria botao pra remover
+        let remover = `<button onlink="remover"${i}>Remover</button>`
+        //Cria uma tag li
+        let li = `<li>${item[0]} | ${item[1]} | ${item[2]} | ${remover}</li>`
+        //Junta o li nos itens
         itens = itens + li
     }
+    //Alterar o html da lista para ser igual aos itens
     Lista.innerHTML = itens;
+}
+function remover(i){
+    let item = amigos[i]; // [Nome,Nasc,Whatsapp]
+    let check = confirm(`Deseja realmente excluir ${item[0]}?`);
+    if (check == true){
+        amigos.splice(i,1); //splice(posição inicial,qtd itens a remover)
+    }
 }
