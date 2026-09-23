@@ -20,5 +20,5 @@ function exibirLista(){
         let li = `<li>${item[0]} | ${item[1]} | ${item[2]}`
         itens = itens + li
     }
-    exibirLista.innerHTML = itens;
+    Lista.innerHTML = itens;
 }
