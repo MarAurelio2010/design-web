@@ -8,4 +8,12 @@ cadastro.addEventListener("submit",function(e){
     e.preventDefault();
     let item = [nome.value, nasc.value, whatsapp.value]
     amigos.unshift(item);
+    //Limpa o formulário
+    cadastro.reset();
+    //Atualiza lista
+    exibirLista();
 });
+
+function exibirLista(){
+    
+}
