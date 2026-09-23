@@ -3,6 +3,7 @@ const cadastro = document.getElementById("cadastro");
 const nome = cadastro.nome;
 const nasc = cadastro.nasc;
 const whatsapp = cadastro.whatsapp;
+const lista = document.getElementById("lista")
 
 cadastro.addEventListener("submit",function(e){
     e.preventDefault();
