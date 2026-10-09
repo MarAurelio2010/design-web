@@ -9,11 +9,11 @@ const balu = {
     },
     comer(kg){
         this.peso = this.peso + kg;
-        alert(`Comi`)
+        alert(`COMI`)
     },
     cagar(kg){
         this.peso = this.peso - kg;
-        alert(`caguei`)
+        alert(`CAGUEI`)
     },
     saudar(){
         let msg = `Olá meu nome é ${this.nome}\n`;
