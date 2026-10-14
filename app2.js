@@ -11,7 +11,7 @@ class Animal{
 }
     comer(kg){
         this.peso = this.peso + kg;
-        alert(`COMI`)
+        alert(`COMI!!!!`)
     },
     cagar(kg){
         this.peso = this.peso - kg;
