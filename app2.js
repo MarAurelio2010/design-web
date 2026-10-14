@@ -41,6 +41,11 @@ class passaro extends Animal{
     falar(){
         alert("piu!piu!");
     }
+    saudar(){
+        let msg = super.saudar();
+        msg = msg + "Eu sou um pássaro!";
+        alert(msg);
+    }
 }
 const balu= new Animal("Balu Brasil");
 const mel = new Animal("Mel","Amarelo",1.10,45,"Labrador");
