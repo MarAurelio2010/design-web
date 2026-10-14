@@ -28,11 +28,20 @@ class Animal{
 class Cachorro extends Animal{
     constructor(n,c="desconhecido",a=0.0, p=0, r="vira-lata"){
         super(n,c,a,p,r);
-        this.patas = 4
+        this.patas = 4;
     }
     falar(){
         alert("au!au!");
     }
 }
+class passaro extends animal{
+    constructor(nome, cor="não tem",altura=0.0, peso=0, raca="desconhecido"){
+        super(nome,cor,altura,peso,raca);
+    }
+    falar(){
+        alert("piu!piu!");
+    }
+}
 const balu= new Animal("Balu Brasil");
 const mel = new Animal("Mel","Amarelo",1.10,45,"Labrador");
+const Leleco = new passaro("Leleco Brasil",raca="Papagaio");
