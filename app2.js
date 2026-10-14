@@ -34,7 +34,7 @@ class Cachorro extends Animal{
         alert("au!au!");
     }
 }
-class passaro extends animal{
+class passaro extends Animal{
     constructor(nome, cor="não tem",altura=0.0, peso=0, raca="desconhecido"){
         super(nome,cor,altura,peso,raca);
     }
