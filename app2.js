@@ -11,12 +11,12 @@ class Animal{
 }
     comer(kg){
         this.peso = this.peso + kg;
-        alert(`COMI!!!!`)
-    },
+        alert(`COMI!!!!`);
+    }
     cagar(kg){
         this.peso = this.peso - kg;
-        alert(`CAGUEI`)
-    },
+        alert(`CAGUEI`);
+    }
     saudar(){
         let msg = `Olá meu nome é ${this.nome}\n`;
         msg = msg+ `Cor: ${this.cor} Raça:${this.raca}\n`;
