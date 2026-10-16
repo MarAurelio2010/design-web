@@ -14,8 +14,9 @@ formulario.addEventListener("submit", function(e){
     let t = texto.value;
     t = t.split(" ");
     for(let i = 0; i<t.length; i++){
-        if (i.includes("#")){
-            lista.push(i);
+        let palavra = t[i];
+        if (palavra.includes("#")){
+            lista.push(palavra);
         }
     }
     tags.innerHTML = lista;
