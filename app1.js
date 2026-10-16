@@ -13,7 +13,11 @@ formulario.addEventListener("submit", function(e){
     e.preventDefault();
     let t = texto.value;
     t = t.split(" ");
-    lista.push(t);
+    for(let i = 0; i<lista.length; i++){
+        if (i.includes("#")){
+            lista.push(i);
+        }
+    }
     tags.innerHTML = lista;
     formulario.reset();
 
