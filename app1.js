@@ -12,8 +12,8 @@ const tags = document.getElementById("tags");
 formulario.addEventListener("submit", function(e){
     e.preventDefault();
     let t = texto.value;
-    lista.push(t)
-    tags.innerHTML = t;
+    lista.push(t);
+    tags.innerHTML = lista;
     formulario.reset();
 
 })
