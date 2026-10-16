@@ -15,11 +15,11 @@ formulario.addEventListener("submit", function(e){
     t = t.split(" ");
     for(let i = 0; i<t.length; i++){
         let palavra = t[i];
-        if (palavra.includes("#")){
+        palavra = palavra.toUpperCase().trim();
+        if (palavra.startsWith("#")){
             lista.push(palavra);
         }
     }
     tags.innerHTML = lista;
     formulario.reset();
-
 });
