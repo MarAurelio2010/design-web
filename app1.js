@@ -1,13 +1,10 @@
 // Processamento de armazenamento
 const lista = []
-
 // Entrada
 const formulario = document.getElementById("formulario");
 const texto = formulario.texto;
-
 // Saída
 const tags = document.getElementById("tags");
-
 // Gatilho/Evento
 formulario.addEventListener("submit", function(e){
     e.preventDefault();
@@ -18,6 +15,9 @@ formulario.addEventListener("submit", function(e){
         palavra = palavra.toUpperCase().trim();
         if (palavra.startsWith("#")){
             lista.push(palavra);
+        }else if(palavras.includes("#")){
+            let pos = palavra.indexOf("#");
+            palavra = palavra.slice(0,pos)
         }
     }
     tags.innerHTML = lista;
