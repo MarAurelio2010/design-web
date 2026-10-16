@@ -17,7 +17,8 @@ formulario.addEventListener("submit", function(e){
             lista.push(palavra);
         }else if(palavras.includes("#")){
             let pos = palavra.indexOf("#");
-            palavra = palavra.slice(0,pos)
+            palavra = palavra.slice(pos,palavra.lenght);
+            lista.push(palavra);
         }
     }
     tags.innerHTML = lista;
